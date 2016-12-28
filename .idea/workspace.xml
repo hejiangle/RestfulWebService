@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="524">
+              <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-208">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="94" column="84" lean-forward="false" selection-start-line="94" selection-start-column="84" selection-end-line="94" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -470,10 +470,10 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/DataService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/serviceImp/DataServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/entity/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java" />
       </list>
     </option>
   </component>
@@ -740,7 +740,27 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.getList">
+  <component name="RunManager" selected="JUnit.UserControllerTest.updateTheNotExistingUser">
+    <configuration default="false" name="UserControllerTest.getUserByAnNotExistingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RESTfulWebService_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hello.controller" />
+      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="getUserByAnNotExistingId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="UserControllerTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RESTfulWebService_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -748,6 +768,26 @@
       <option name="PACKAGE_NAME" value="hello.controller" />
       <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
       <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserControllerTest.deleteByAnExistingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RESTfulWebService_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hello.controller" />
+      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="deleteByAnExistingId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -789,46 +829,6 @@
       <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
       <option name="METHOD_NAME" value="updateTheNotExistingUser" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserControllerTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RESTfulWebService_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="getList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RESTfulWebService_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -977,19 +977,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.addUser" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheExistingUser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheNotExistingUser" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getUserByAnNotExistingId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.addUser" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByAnExistingId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheExistingUser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheNotExistingUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheNotExistingUser" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheNotExistingUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheExistingUser" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByAnExistingId" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.addUser" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateTheExistingUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getUserByAnNotExistingId" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -1016,11 +1016,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserControllerTest - 2016.12.28 at 15h 48m 30s.xml">
-      <configuration name="UserControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserControllerTest - 2016.12.28 at 15h 49m 10s.xml">
       <configuration name="UserControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserControllerTest_addUser - 2016.12.28 at 17h 49m 07s.xml">
+      <configuration name="UserControllerTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserControllerTest_deleteByAnExistingId - 2016.12.28 at 17h 49m 18s.xml">
+      <configuration name="UserControllerTest.deleteByAnExistingId" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserControllerTest_getList - 2016.12.28 at 15h 48m 58s.xml">
       <configuration name="UserControllerTest.getList" configurationId="JUnit" />
@@ -1028,22 +1031,19 @@
     <history-entry file="UserControllerTest_getList - 2016.12.28 at 15h 50m 29s.xml">
       <configuration name="UserControllerTest.getList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 33m 52s.xml">
-      <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_getList - 2016.12.28 at 17h 48m 33s.xml">
+      <configuration name="UserControllerTest.getList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 38m 28s.xml">
-      <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_getUserByAnExistingId - 2016.12.28 at 17h 48m 43s.xml">
+      <configuration name="UserControllerTest.getUserByAnExistingId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 39m 32s.xml">
-      <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_getUserByAnNotExistingId - 2016.12.28 at 17h 48m 55s.xml">
+      <configuration name="UserControllerTest.getUserByAnNotExistingId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 42m 25s.xml">
-      <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_updateTheExistingUser - 2016.12.28 at 17h 49m 25s.xml">
+      <configuration name="UserControllerTest.updateTheExistingUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 44m 27s.xml">
-      <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 15h 46m 45s.xml">
+    <history-entry file="UserControllerTest_updateTheNotExistingUser - 2016.12.28 at 17h 49m 33s.xml">
       <configuration name="UserControllerTest.updateTheNotExistingUser" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1067,7 +1067,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2980614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1476,8 +1476,8 @@
         <state relative-caret-position="285">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1538,16 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/GreetingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1558,8 +1548,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="524">
+          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="94" column="84" lean-forward="false" selection-start-line="94" selection-start-column="84" selection-end-line="94" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

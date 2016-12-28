@@ -67,14 +67,14 @@ public class UserControllerTest {
     public void addUser() throws Exception {
         int id = 3096;
         User user = new User("you","Lorence");
-        mockMvc.perform(MockMvcRequestBuilders.post("http://localhost:8080/user/{id}/add?password={password}&name={name}",id,user.getPassword(),user.getName()))
+        mockMvc.perform(MockMvcRequestBuilders.post("http://localhost:8080/user/{id}?password={password}&name={name}",id,user.getPassword(),user.getName()))
                 .andExpect(status().isCreated()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void deleteByAnExistingId() throws Exception {
         int id = 9527;
-        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/user/{id}/delete",id))
+        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/user/{id}",id))
                 .andExpect(status().isNoContent()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -83,7 +83,7 @@ public class UserControllerTest {
         Integer id = 9527;
         String name = "Helo";
         String password = "test";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}/update?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -92,7 +92,7 @@ public class UserControllerTest {
         Integer id = 15;
         String name = "Frank";
         String password = "test2";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}/update?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isCreated()).andDo(MockMvcResultHandlers.print());
     }
 

@@ -44,22 +44,16 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value="/{id}/add",method = RequestMethod.POST)
+    @RequestMapping(value="/{id}",method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity<?> addUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);
-        URI location = null;
-        try {
-            location = new URI("http://localhost:8080/user/{id/add}");
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
         int result = dataService.addUser(id,user);
         System.out.println(result);
         return ResponseEntity.status(result).body(dataService.getUserList());
     }
 
-    @RequestMapping(value = "/{id}/delete",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<?> deleteById(@PathVariable int id){
         int result = dataService.deleteUserById(id);
@@ -78,7 +72,7 @@ public class UserController {
     }
 */
 
-    @RequestMapping(value="/{id}/update",method = RequestMethod.PUT)
+    @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<?> updateUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);
