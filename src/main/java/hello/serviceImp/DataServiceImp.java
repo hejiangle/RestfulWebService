@@ -27,14 +27,6 @@ public class DataServiceImp implements DataService {
          }
     }
 
-    @Override
-    public int deleteUser(User user) {
-        if(data.delete(user).equals("204")){
-            return 204;
-        }else{
-            return 404;
-        }
-    }
 
     @Override
     public int deleteUserById(int id) {

@@ -13,7 +13,7 @@ public interface DataService {
 
     public int addUser(int id,User user);
 
-    public int deleteUser(User user);
+    //public int deleteUser(User user);
 
     public int deleteUserById(int id);
 

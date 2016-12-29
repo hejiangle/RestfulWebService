@@ -9,8 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Map;
 
 /**
@@ -18,21 +16,20 @@ import java.util.Map;
  */
 @RestController
 @Resource(name = "DataService")
-@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private DataService dataService;
 
-    @RequestMapping(value="/list",method = RequestMethod.GET)
+    @RequestMapping(value="/users",method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<Map<Integer,User>> getList(){
         System.out.println("Server will show all of users:");
-        Map<Integer,User> userlist = dataService.getUserList();
-        return ResponseEntity.ok(userlist);
+        Map<Integer,User> users = dataService.getUserList();
+        return ResponseEntity.ok(users);
     }
 
-    @RequestMapping(value="/{id}",method = RequestMethod.GET)
+    @RequestMapping(value="/user/{id}",method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<?> getUserById(@PathVariable int id){
         User user = dataService.getUserById(id);
@@ -44,7 +41,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value="/{id}",method = RequestMethod.POST)
+    @RequestMapping(value="/user/{id}",method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity<?> addUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);
@@ -53,26 +50,16 @@ public class UserController {
         return ResponseEntity.status(result).body(dataService.getUserList());
     }
 
-    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/user/{id}",method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<?> deleteById(@PathVariable int id){
         int result = dataService.deleteUserById(id);
         System.out.println(result);
-        return ResponseEntity.status(result).body(dataService.getUserList());
+        return ResponseEntity.status(result).build();
     }
 
-/*
-    @RequestMapping(value = "/delete",method = RequestMethod.DELETE)
-    @ResponseBody
-    public ResponseEntity<?> delete(@RequestParam String password,@RequestParam String name){
-        User user = new User(password,name);
-        int result = dataService.deleteUser(user);
-        System.out.println(result);
-        return ResponseEntity.status(result).body(dataService.getUserList());
-    }
-*/
 
-    @RequestMapping(value="/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value="/user/{id}",method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<?> updateUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);
