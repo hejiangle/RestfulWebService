@@ -11,13 +11,14 @@ import java.util.Map;
 public class Data {
 
    private Map<Integer,User> dataSource = new HashMap<>();
-   private String status;
+   private boolean flag;
 
    public Data(){
-       status = "";
+       flag = false;
        User user_1 = new User("asd","Leo");
        User user_2 = new User("qwe","Oli");
        dataSource.put(9527,user_1);
+
        dataSource.put(2048,user_2);
    }
 
@@ -26,53 +27,55 @@ public class Data {
    }
 
 
-   public String add(int id,User user){
+   public boolean add(int id,User user) {
        if(dataSource.containsKey(id)){
            System.out.println("This id is existing!");
-           status = "403";
+           flag = false;
        }else{
            if(isUserNameExisting(user)){
                System.out.println("This name is existing!");
-               status = "403";
+               flag = false;
+
            }else {
                dataSource.put(id, user);
-               status = "201";
+               flag = true;
+
            }
        }
-       return status;
+       return flag;
    }
 
-   public String delete(int id){
+   public boolean delete(int id){
        if(!dataSource.containsKey(id)){
            System.out.println("This id is not existing!");
-           status = "404";
+           flag = false;
        }else{
            dataSource.remove(id);
-           status = "204";
+           flag = true;
        }
-       return status;
+       return flag;
    }
 
-   public String update(int id ,User user){
+   public boolean update(int id ,User user){
        if(dataSource.containsKey(id)){
            if(isUserExisting(user)){
                System.out.println("This user has been existing!");
-               status = "403";
+               flag = false;
            }else if(isUserNameExisting(user)){
                System.out.println("This opration only change password!");
                dataSource.get(id).setPassword(user.getPassword());
-               status = "200";
+               flag = true;
            } else{
                dataSource.get(id).setName(user.getName());
                dataSource.get(id).setPassword(user.getPassword());
-               status = "200";
+               flag = true;
            }
        }else{
            System.out.println("This id is not existing!");
            System.out.println("System will create a new user!");
-           status = add(id,user);
+           flag = add(id,user);
        }
-       return status;
+       return flag;
    }
 
    public Map<Integer,User> get(){

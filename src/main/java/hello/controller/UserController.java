@@ -15,13 +15,14 @@ import java.util.Map;
  * Created by cqu on 23/12/2016.
  */
 @RestController
+@RequestMapping(value = "/users")
 @Resource(name = "DataService")
 public class UserController {
 
     @Autowired
     private DataService dataService;
 
-    @RequestMapping(value="/users",method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<Map<Integer,User>> getList(){
         System.out.println("Server will show all of users:");
@@ -29,7 +30,7 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
-    @RequestMapping(value="/user/{id}",method = RequestMethod.GET)
+    @RequestMapping(value="/{id}",method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<?> getUserById(@PathVariable int id){
         User user = dataService.getUserById(id);
@@ -41,7 +42,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value="/user/{id}",method = RequestMethod.POST)
+    @RequestMapping(value="/{id}",method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity<?> addUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);
@@ -50,7 +51,7 @@ public class UserController {
         return ResponseEntity.status(result).body(dataService.getUserList());
     }
 
-    @RequestMapping(value = "/user/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<?> deleteById(@PathVariable int id){
         int result = dataService.deleteUserById(id);
@@ -59,7 +60,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value="/user/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<?> updateUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
         User user = new User(password,name);

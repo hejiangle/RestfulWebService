@@ -67,7 +67,7 @@ public class UserControllerTest {
     @Test
     public void getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId() throws Exception {
         int id = 9527;
-        mockMvc.perform((MockMvcRequestBuilders.get("http://localhost:8080/user/{id}",id)))
+        mockMvc.perform((MockMvcRequestBuilders.get("http://localhost:8080/users/{id}",id)))
                 .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("{\"password\":\"asd\",\"name\":\"Leo\"}")));
 
     }
@@ -75,7 +75,7 @@ public class UserControllerTest {
     @Test
     public void getUserByIdMethodShouldReturnNotFoundStatusAndNullStringWhenInputAnNotExistingId() throws Exception {
         int id = 1024;
-        mockMvc.perform((MockMvcRequestBuilders.get("http://localhost:8080/user/{id}",id)))
+        mockMvc.perform((MockMvcRequestBuilders.get("http://localhost:8080/users/{id}",id)))
                 .andExpect(status().isNotFound()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("")));
 
     }
@@ -84,21 +84,21 @@ public class UserControllerTest {
     public void addUserMethodShouldReturnIsCreatedStatus() throws Exception {
         int id = 3096;
         User user = new User("you","Lorence");
-        mockMvc.perform(MockMvcRequestBuilders.post("http://localhost:8080/user/{id}?password={password}&name={name}",id,user.getPassword(),user.getName()))
+        mockMvc.perform(MockMvcRequestBuilders.post("http://localhost:8080/users/{id}?password={password}&name={name}",id,user.getPassword(),user.getName()))
                 .andExpect(status().isCreated()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId() throws Exception {
         int id = 9527;
-        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/user/{id}",id))
+        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/users/{id}",id))
                 .andExpect(status().isNoContent()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnNotExistingId() throws Exception {
         int id = 567;
-        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/user/{id}",id))
+        mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/users/{id}",id))
                 .andExpect(status().isNotFound()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -107,7 +107,7 @@ public class UserControllerTest {
         Integer id = 9527;
         String name = "Leo";
         String password = "asd";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isForbidden()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -116,7 +116,7 @@ public class UserControllerTest {
         Integer id = 9527;
         String name = "Leo";
         String password = "test";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -125,7 +125,7 @@ public class UserControllerTest {
         Integer id = 9527;
         String name = "Frank";
         String password = "test2";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print());
     }
 
@@ -134,7 +134,7 @@ public class UserControllerTest {
         Integer id = 89757;
         String name = "JJ";
         String password = "munaiyi";
-        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/user/{id}?name={name}&password={password}",id,name,password))
+        mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
                 .andExpect(status().isCreated()).andDo(MockMvcResultHandlers.print());
     }
 

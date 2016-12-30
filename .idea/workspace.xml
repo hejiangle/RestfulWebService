@@ -36,30 +36,10 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="600">
+              <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +48,8 @@
       <file leaf-file-name="DataService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/DataService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="137">
+              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,16 +60,16 @@
       <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#2176#2177#0" expanded="true" />
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2236#2237#0" expanded="true" />
-                <element signature="e#2275#2276#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#2155#2156#0" expanded="true" />
+                <element signature="e#2186#2187#0" expanded="true" />
+                <element signature="e#2215#2216#0" expanded="true" />
+                <element signature="e#2254#2255#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,14 +78,49 @@
       <file leaf-file-name="DataServiceImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/serviceImp/DataServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="105">
+              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1115#1116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataServiceImpTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hello/serviceImp/DataServiceImpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <folding>
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +129,11 @@
       <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="1350">
+              <caret line="136" column="79" lean-forward="false" selection-start-line="136" selection-start-column="79" selection-end-line="136" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,12 +143,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getUserList</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -457,13 +479,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/GreetingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/utils/DataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/service/DataService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/serviceImp/DataServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/service/DataService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hello/serviceImp/DataServiceImpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/entity/Data.java" />
         <option value="$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/entity/Data.java" />
       </list>
     </option>
   </component>
@@ -541,6 +564,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="hello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serviceImp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTfulWebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTfulWebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -586,66 +643,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTfulWebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTfulWebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serviceImp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTfulWebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTfulWebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -724,13 +721,54 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="hello.serviceImp" />
       <recent name="hello.controller" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword">
+  <component name="RunManager" selected="JUnit.UserControllerTest.getListMethodShouldReturnUserListWithJSON">
+    <configuration default="false" name="UserControllerTest.getListMethodShouldReturnUserListWithJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RESTfulWebService_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hello.controller" />
+      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="getListMethodShouldReturnUserListWithJSON" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserControllerTest.addUserMethodShouldReturnIsCreatedStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RESTfulWebService_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hello.controller" />
+      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="addUserMethodShouldReturnIsCreatedStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RESTfulWebService_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -751,13 +789,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UserControllerTest.updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DataServiceImpTest.addUserMethodshouldReturnTrueWhenInputAnNotExistingUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RESTfulWebService_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo" />
+      <option name="PACKAGE_NAME" value="hello.serviceImp" />
+      <option name="MAIN_CLASS_NAME" value="hello.serviceImp.DataServiceImpTest" />
+      <option name="METHOD_NAME" value="addUserMethodshouldReturnTrueWhenInputAnNotExistingUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -771,53 +809,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RESTfulWebService_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RESTfulWebService_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserControllerTest.updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RESTfulWebService_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="hello.controller" />
-      <option name="MAIN_CLASS_NAME" value="hello.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId" />
+      <option name="PACKAGE_NAME" value="hello.serviceImp" />
+      <option name="MAIN_CLASS_NAME" value="hello.serviceImp.DataServiceImpTest" />
+      <option name="METHOD_NAME" value="addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -967,19 +965,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getListMethodShouldReturnUserListWithJSON" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.addUserMethodShouldReturnIsCreatedStatus" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DataServiceImpTest.addUserMethodshouldReturnTrueWhenInputAnNotExistingUser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.getListMethodShouldReturnUserListWithJSON" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DataServiceImpTest.addUserMethodshouldReturnTrueWhenInputAnNotExistingUser" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.addUserMethodShouldReturnIsCreatedStatus" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -1006,35 +1004,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserControllerTest_addUserMethodShouldReturnIsCreatedStatus - 2016.12.29 at 15h 50m 48s.xml">
-      <configuration name="UserControllerTest.addUserMethodShouldReturnIsCreatedStatus" configurationId="JUnit" />
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 09h 43m 44s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId - 2016.12.29 at 15h 50m 59s.xml">
-      <configuration name="UserControllerTest.deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId" configurationId="JUnit" />
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 09h 44m 10s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_getListMethodShouldReturnUserListWithJSON - 2016.12.29 at 15h 50m 01s.xml">
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 09h 44m 48s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 10h 15m 44s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 10h 54m 39s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 10h 55m 17s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 10h 55m 50s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataServiceImpTest_addUserMethodShouldReturnTrueWhenInputAnNotExistingUser - 2016.12.30 at 11h 00m 33s.xml">
+      <configuration name="DataServiceImpTest.addUserMethodShouldReturnTrueWhenInputAnNotExistingUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserControllerTest_getListMethodShouldReturnUserListWithJSON - 2016.12.30 at 14h 42m 10s.xml">
       <configuration name="UserControllerTest.getListMethodShouldReturnUserListWithJSON" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId - 2016.12.29 at 15h 50m 12s.xml">
-      <configuration name="UserControllerTest.getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_getUserByIdMethodShouldReturnNotFoundStatusAndNullStringWhenInputAnNotExistingId - 2016.12.29 at 15h 50m 28s.xml">
-      <configuration name="UserControllerTest.getUserByIdMethodShouldReturnNotFoundStatusAndNullStringWhenInputAnNotExistingId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId - 2016.12.29 at 15h 51m 57s.xml">
-      <configuration name="UserControllerTest.updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo - 2016.12.29 at 15h 51m 10s.xml">
-      <configuration name="UserControllerTest.updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword - 2016.12.29 at 15h 51m 35s.xml">
-      <configuration name="UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword - 2016.12.29 at 15h 51m 47s.xml">
-      <configuration name="UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserControllerTest_updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword - 2016.12.29 at 15h 52m 17s.xml">
-      <configuration name="UserControllerTest.updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_getListMethodShouldReturnUserListWithJSON - 2016.12.30 at 14h 44m 59s.xml">
+      <configuration name="UserControllerTest.getListMethodShouldReturnUserListWithJSON" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1057,7 +1055,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2980614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1089,14 +1087,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/GreetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1119,14 +1109,6 @@
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1178,14 +1160,6 @@
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1237,14 +1211,6 @@
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1286,14 +1252,6 @@
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1453,22 +1411,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/Greeting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#394#395#0" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,10 +1427,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/DataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="137">
+          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/serviceImp/DataServiceImpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1492,67 +1468,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="600">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/serviceImp/DataServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/entity/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2275#2276#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/serviceImp/DataServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hello/controller/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="1350">
+          <caret line="136" column="79" lean-forward="false" selection-start-line="136" selection-start-column="79" selection-end-line="136" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

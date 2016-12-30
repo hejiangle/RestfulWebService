@@ -20,7 +20,7 @@ public class DataServiceImp implements DataService {
 
     @Override
     public int addUser(int id,User user) {
-         if(data.add(id,user).equals("201")){
+         if(data.add(id,user)){
              return 201;
          }else{
              return 403;
@@ -30,7 +30,7 @@ public class DataServiceImp implements DataService {
 
     @Override
     public int deleteUserById(int id) {
-        if(data.delete(id).equals("204")){
+        if(data.delete(id)){
             return 204;
         }else {
             return 404;
@@ -39,11 +39,9 @@ public class DataServiceImp implements DataService {
 
     @Override
     public int updateUserById(int id, User user) {
-        String status = data.update(id,user);
-        if(status.equals("200")){
+        boolean flag = data.update(id,user);
+        if(flag){
             return 200;
-        }else if(status.equals("201")){
-            return 201;
         }else{
             return 403;
         }
