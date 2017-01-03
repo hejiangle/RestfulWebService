@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">6</div>
+<div class="counter">21</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">14</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.822s</div>
+<div class="counter">0.170s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">33%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,77 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#addUserMethodShouldReturnIsCreatedStatus">addUserMethodShouldReturnIsCreatedStatus</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId">deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnNotExistingId">deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnNotExistingId</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#getListMethodShouldReturnUserListWithJSON">getListMethodShouldReturnUserListWithJSON</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId">getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#getUserByIdMethodShouldReturnNotFoundStatusAndNullStringWhenInputAnNotExistingId">getUserByIdMethodShouldReturnNotFoundStatusAndNullStringWhenInputAnNotExistingId</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId">updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo">updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword">updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword</a>
+</li>
+<li>
+<a href="classes/hello.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/hello.controller.UserControllerTest.html#updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword">updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword</a>
+</li>
+<li>
+<a href="classes/hello.serviceImp.DataServiceImpTest.html">DataServiceImpTest</a>.
+<a href="classes/hello.serviceImp.DataServiceImpTest.html#addUserMethodShouldReturnFalseWhenInputAnExistingUser">addUserMethodShouldReturnFalseWhenInputAnExistingUser</a>
+</li>
+<li>
+<a href="classes/hello.serviceImp.DataServiceImpTest.html">DataServiceImpTest</a>.
+<a href="classes/hello.serviceImp.DataServiceImpTest.html#deleteMethodShouldReturnFalseByAnNotExistingId">deleteMethodShouldReturnFalseByAnNotExistingId</a>
+</li>
+<li>
+<a href="classes/hello.serviceImp.DataServiceImpTest.html">DataServiceImpTest</a>.
+<a href="classes/hello.serviceImp.DataServiceImpTest.html#getUserMethodShouldReturnNullByAnNotExistingId">getUserMethodShouldReturnNullByAnNotExistingId</a>
+</li>
+<li>
+<a href="classes/hello.serviceImp.DataServiceImpTest.html">DataServiceImpTest</a>.
+<a href="classes/hello.serviceImp.DataServiceImpTest.html#updateMethodShouldReturnFalseByAnExistingIdWhenInputAnExistingUserInfo">updateMethodShouldReturnFalseByAnExistingIdWhenInputAnExistingUserInfo</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,19 +143,29 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/hello.controller.html">hello.controller</a>
 </td>
-<td>6</td>
+<td>10</td>
+<td>10</td>
 <td>0</td>
+<td>0.010s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/hello.serviceImp.html">hello.serviceImp</a>
+</td>
+<td>11</td>
+<td>4</td>
 <td>0</td>
-<td>0.822s</td>
-<td class="success">100%</td>
+<td>0.160s</td>
+<td class="failures">63%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -106,13 +180,22 @@
 </thead>
 <tbody>
 <tr>
-<td class="success"/>
+<td class="failures"/>
 <a href="classes/hello.controller.UserControllerTest.html">hello.controller.UserControllerTest</a>
-<td>6</td>
+<td>10</td>
+<td>10</td>
 <td>0</td>
+<td>0.010s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures"/>
+<a href="classes/hello.serviceImp.DataServiceImpTest.html">hello.serviceImp.DataServiceImpTest</a>
+<td>11</td>
+<td>4</td>
 <td>0</td>
-<td>0.822s</td>
-<td class="success">100%</td>
+<td>0.160s</td>
+<td class="failures">63%</td>
 </tr>
 </tbody>
 </table>
@@ -125,7 +208,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.1</a> at Dec 27, 2016 4:05:11 PM</p>
+<a href="http://www.gradle.org">Gradle 3.1</a> at Jan 3, 2017 4:50:19 PM</p>
 </div>
 </div>
 </body>
