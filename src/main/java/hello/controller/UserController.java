@@ -4,6 +4,7 @@ import hello.entity.User;
 import hello.service.DataService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +30,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
+    @Qualifier("dataServiceImp")
     private DataService dataService;
 
     @RequestMapping(method = RequestMethod.GET)

@@ -18,15 +18,10 @@ import java.util.Map;
 public class Data {
 
    private Map<Long,User> dataSource = new HashMap<>();
-   private boolean flag;
 
    public Data(){
-       flag = false;
-       User user_1 = new User("asd","Leo");
-       User user_2 = new User("qwe","Oli");
+       User user_1 = new User(9527L,"asd","Leo");
        dataSource.put(9527L,user_1);
-
-       dataSource.put(2048L,user_2);
    }
 
    public void setDataSource(Map<Long,User> dataSource){

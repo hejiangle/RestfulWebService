@@ -6,6 +6,8 @@ import hello.entity.Data;
 import hello.entity.User;
 
 import hello.serviceImp.DataServiceImp;
+import hello.serviceImp.DataServiceImpMock;
+import org.hibernate.service.spi.InjectService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,20 +42,15 @@ public class UserControllerTest {
     private MockMvc mockMvc;
 
     @Spy
-    private Data mockdata;
+    @Autowired
+    private DataServiceImpMock dataServiceImpMock;
 
     @InjectMocks
-    @Autowired
-    private DataServiceImp dataServiceImp;
-
     @Autowired
     private UserController userController;
 
     @Before
     public void setUp(){
-        Map<Long,User> dataSource = new HashMap<>();
-        dataSource.put(9527L,new User(9527L,"asd","Leo"));
-        mockdata.setDataSource(dataSource);
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders.standaloneSetup(userController).build();
     }
