@@ -9,10 +9,19 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.Map;
+import java.util.List;
 
 /**
  * Created by cqu on 23/12/2016.
+ */
+
+/**
+ * Controller 用来根据URI调用不同的业务方法
+ * 返回处理结果：
+ * 列表直接返回一个list
+ * 对象查询则返回查询对象user
+ * 新建用户返回成功返回201状态，并显示list;失败则返回403状态
+ *
  */
 @RestController
 @RequestMapping(value = "/users")
@@ -24,15 +33,15 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<Map<Integer,User>> getList(){
+    public ResponseEntity<List<User>> getList(){
         System.out.println("Server will show all of users:");
-        Map<Integer,User> users = dataService.getUserList();
+        List<User> users = dataService.getUserList();
         return ResponseEntity.ok(users);
     }
 
     @RequestMapping(value="/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<?> getUserById(@PathVariable int id){
+    public ResponseEntity<?> getUserById(@PathVariable Long id){
         User user = dataService.getUserById(id);
         if(user!=null) {
             return ResponseEntity.ok(user);
@@ -44,16 +53,16 @@ public class UserController {
 
     @RequestMapping(value="/{id}",method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<?> addUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
-        User user = new User(password,name);
-        int result = dataService.addUser(id,user);
+    public ResponseEntity<?> addUser(@PathVariable Long id,@RequestParam String password,@RequestParam String name){
+        User user = new User(id,password,name);
+        int result = dataService.addUser(user);
         System.out.println(result);
         return ResponseEntity.status(result).body(dataService.getUserList());
     }
 
     @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
     @ResponseBody
-    public ResponseEntity<?> deleteById(@PathVariable int id){
+    public ResponseEntity<?> deleteById(@PathVariable Long id){
         int result = dataService.deleteUserById(id);
         System.out.println(result);
         return ResponseEntity.status(result).build();
@@ -62,9 +71,9 @@ public class UserController {
 
     @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ResponseBody
-    public ResponseEntity<?> updateUser(@PathVariable int id,@RequestParam String password,@RequestParam String name){
-        User user = new User(password,name);
-        int result = dataService.updateUserById(id,user);
+    public ResponseEntity<?> updateUser(@PathVariable Long id,@RequestParam String password,@RequestParam String name){
+        User user = new User(id,password,name);
+        int result = dataService.updateUser(user);
         System.out.println(result);
         return ResponseEntity.status(result).body(dataService.getUserList());
     }

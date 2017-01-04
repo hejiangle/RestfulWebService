@@ -3,6 +3,7 @@ package hello.service;
 import hello.entity.User;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -11,15 +12,15 @@ import java.util.Map;
 
 public interface DataService {
 
-    public int addUser(int id,User user);
+    public int addUser(User user);
 
-    public int deleteUserById(int id);
+    public int deleteUserById(Long id);
 
-    public int updateUserById(int id,User user);
+    public int updateUser(User user);
 
-    public Map<Integer,User> getUserList();
+//    public Map<Integer,User> getUserList();
 
-    public User getUserById(int id);
+    public User getUserById(Long id);
 
-
+    public List<User> getUserList();
 }

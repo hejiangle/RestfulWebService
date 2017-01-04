@@ -51,8 +51,8 @@ public class UserControllerTest {
 
     @Before
     public void setUp(){
-        Map<Integer,User> dataSource = new HashMap<>();
-        dataSource.put(9527,new User("asd","Leo"));
+        Map<Long,User> dataSource = new HashMap<>();
+        dataSource.put(9527L,new User(9527L,"asd","Leo"));
         mockdata.setDataSource(dataSource);
         MockitoAnnotations.initMocks(this);
         mockMvc = MockMvcBuilders.standaloneSetup(userController).build();
@@ -61,14 +61,14 @@ public class UserControllerTest {
     @Test
     public void getListMethodShouldReturnUserListWithJSON() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/users"))
-                .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("{\"9527\":{\"password\":\"asd\",\"name\":\"Leo\"}}")));
+                .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("[{\"id\":9527,\"password\":\"asd\",\"name\":\"Leo\"}]")));
     }
 
     @Test
     public void getUserByIdMethodShouldReturnIsOkStatusAndAnUserWithJSONWhenInputAnExcitingId() throws Exception {
         int id = 9527;
         mockMvc.perform((MockMvcRequestBuilders.get("http://localhost:8080/users/{id}",id)))
-                .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("{\"password\":\"asd\",\"name\":\"Leo\"}")));
+                .andExpect(status().isOk()).andDo(MockMvcResultHandlers.print()).andExpect(content().string(containsString("{\"id\":9527,\"password\":\"asd\",\"name\":\"Leo\"}")));
 
     }
 
@@ -90,21 +90,21 @@ public class UserControllerTest {
 
     @Test
     public void deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnExistingId() throws Exception {
-        int id = 9527;
+        Long id = 9527L;
         mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/users/{id}",id))
                 .andExpect(status().isNoContent()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void deleteByIdMethodShouldReturnIsNoContentStatusWhenInputAnNotExistingId() throws Exception {
-        int id = 567;
+        Long id = 567L;
         mockMvc.perform(MockMvcRequestBuilders.delete("http://localhost:8080/users/{id}",id))
                 .andExpect(status().isNotFound()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void updateUserMethodShouldReturnIsForbiddenStatusWhenInputAnExistingIdAndExistingUserInfo() throws Exception {
-        Integer id = 9527;
+        Long id = 9527L;
         String name = "Leo";
         String password = "asd";
         mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
@@ -113,7 +113,7 @@ public class UserControllerTest {
 
     @Test
     public void updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnExistingUserNameWithAnyPassword() throws Exception {
-        Integer id = 9527;
+        Long id = 9527L;
         String name = "Leo";
         String password = "test";
         mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
@@ -122,7 +122,7 @@ public class UserControllerTest {
 
     @Test
     public void updateUserMethodShouldReturnIsOkStatusWhenInputAnExistingIdAndAnNotExistingUserNameWithAnyPassword() throws Exception {
-        Integer id = 9527;
+        Long id = 9527L;
         String name = "Frank";
         String password = "test2";
         mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))
@@ -131,7 +131,7 @@ public class UserControllerTest {
 
     @Test
     public void updateUserMethodShouldReturnIsCreatedStatusWhenInputAnNotExistingId() throws Exception{
-        Integer id = 89757;
+        Long id = 89757L;
         String name = "JJ";
         String password = "munaiyi";
         mockMvc.perform(MockMvcRequestBuilders.put("http://localhost:8080/users/{id}?name={name}&password={password}",id,name,password))

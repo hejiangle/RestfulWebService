@@ -7,27 +7,34 @@ import java.util.Map;
 /**
  * Created by cqu on 27/12/2016.
  */
+
+/**
+ * 通过Map模拟数据库和数据存取层
+ * 在创建对象时初始化数据
+ * 提供简单数据新增、删除、查询方法
+ */
+
 @Component
 public class Data {
 
-   private Map<Integer,User> dataSource = new HashMap<>();
+   private Map<Long,User> dataSource = new HashMap<>();
    private boolean flag;
 
    public Data(){
        flag = false;
        User user_1 = new User("asd","Leo");
        User user_2 = new User("qwe","Oli");
-       dataSource.put(9527,user_1);
+       dataSource.put(9527L,user_1);
 
-       dataSource.put(2048,user_2);
+       dataSource.put(2048L,user_2);
    }
 
-   public void setDataSource(Map<Integer,User> dataSource){
+   public void setDataSource(Map<Long,User> dataSource){
        this.dataSource = dataSource;
    }
 
 
-   public boolean add(int id,User user) {
+   /*public boolean add(int id,User user) {
        if(dataSource.containsKey(id)){
            System.out.println("This id is existing!");
            flag = false;
@@ -43,9 +50,14 @@ public class Data {
            }
        }
        return flag;
+   }*/
+
+   public void add(Long id,User user){
+       user.setId(id);
+       dataSource.put(id,user);
    }
 
-   public boolean delete(int id){
+   /*public boolean delete(int id){
        if(!dataSource.containsKey(id)){
            System.out.println("This id is not existing!");
            flag = false;
@@ -54,9 +66,12 @@ public class Data {
            flag = true;
        }
        return flag;
+   }*/
+   public void delete(Long id){
+       dataSource.remove(id);
    }
 
-   public boolean update(int id ,User user){
+  /* public boolean update(int id ,User user){
        if(dataSource.containsKey(id)){
            if(isUserExisting(user)){
                System.out.println("This user has been existing!");
@@ -76,13 +91,13 @@ public class Data {
            flag = add(id,user);
        }
        return flag;
-   }
+   }*/
 
-   public Map<Integer,User> get(){
+   public Map<Long,User> get(){
        return dataSource;
    }
 
-   public User get(int id){
+   public User get(Long id){
        return dataSource.get(id);
    }
 
