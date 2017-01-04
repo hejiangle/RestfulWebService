@@ -55,8 +55,8 @@ public class UserController {
 
     @RequestMapping(value="/{id}",method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<?> addUser(@PathVariable Long id,@RequestParam String password,@RequestParam String name){
-        User user = new User(id,password,name);
+    public ResponseEntity<?> addUser(@PathVariable Long id,@RequestBody User user){
+        //User user = new User(id,password,name);
         int result = dataService.addUser(user);
         System.out.println(result);
         return ResponseEntity.status(result).body(dataService.getUserList());
@@ -73,8 +73,8 @@ public class UserController {
 
     @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ResponseBody
-    public ResponseEntity<?> updateUser(@PathVariable Long id,@RequestParam String password,@RequestParam String name){
-        User user = new User(id,password,name);
+    public ResponseEntity<?> updateUser(@PathVariable Long id,@RequestBody User user){
+        //User user = new User(id,password,name);
         int result = dataService.updateUser(user);
         System.out.println(result);
         return ResponseEntity.status(result).body(dataService.getUserList());
