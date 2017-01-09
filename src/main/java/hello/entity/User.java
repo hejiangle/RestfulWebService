@@ -18,7 +18,7 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) //主键自增长
+    @GeneratedValue(strategy = GenerationType.AUTO) //主键自动增加
     private Long id;
     private String password;
     private String name;

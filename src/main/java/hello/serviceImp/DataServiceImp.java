@@ -66,11 +66,15 @@ public class DataServiceImp implements DataService {
                 statusCode = 403;
             }else if(isUserNameExisting(user)){
                 System.out.println("This opration only change password!");
-                userRepository.findOne(user.getId()).setPassword(user.getPassword());
+                User temp = userRepository.findOne(user.getId());
+                temp.setPassword(user.getPassword());
+                userRepository.save(temp);
                 statusCode = 200;
             } else{
-                userRepository.findOne(user.getId()).setName(user.getName());
-                userRepository.findOne(user.getId()).setPassword(user.getPassword());
+                User temp = userRepository.findOne(user.getId());
+                temp.setPassword(user.getPassword());
+                temp.setName(user.getName());
+                userRepository.save(temp);
                 statusCode = 200;
             }
         }else{
