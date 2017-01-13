@@ -1,9 +1,5 @@
 package com.tw.jlhe.practice.entity;
 
-/**
- * Created by cqu on 23/12/2016.
- */
-
 
 import javax.persistence.*;
 import java.io.Serializable;

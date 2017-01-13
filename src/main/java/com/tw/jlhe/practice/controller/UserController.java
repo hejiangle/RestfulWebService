@@ -17,10 +17,6 @@ import java.util.List;
 
 
 /**
- * Created by cqu on 23/12/2016.
- */
-
-/**
  * Controller 用来根据URI调用不同的业务方法
  * 返回处理结果：
  * 列表直接返回一个list

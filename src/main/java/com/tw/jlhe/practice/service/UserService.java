@@ -4,10 +4,6 @@ import com.tw.jlhe.practice.entity.User;
 import java.util.List;
 
 
-/**
- * Created by cqu on 27/12/2016.
- */
-
 public interface UserService {
 
     public void createUser(User user) throws Exception;

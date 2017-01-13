@@ -9,11 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * Created by cqu on 27/12/2016.
- */
-
 /**
  * 业务逻辑层
  * 对数据增删查操作进行条件判断
