@@ -24,7 +24,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public void createUser(User user) throws Exception {
-        if(userRepository.exists(user.getId())||isUserNameExisting(user)){
+        if (userRepository.exists(user.getId()) || isUserNameExisting(user)) {
             throw new Exception("This User has been existing!");
         } else {
             userRepository.save(user);
@@ -37,6 +37,15 @@ public class UserServiceImp implements UserService {
             throw new Exception("This id is not existing!");
         }else{
             userRepository.delete(id);
+        }
+    }
+
+    @Override
+    public void updateUser(User user) throws Exception {
+        if(!userRepository.exists(user.getId())){
+            throw new Exception("This id is not existing!");
+        }else{
+            userRepository.save(user);
         }
     }
 

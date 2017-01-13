@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO) //主键自动增加
+    @GeneratedValue(strategy = GenerationType.AUTO) //主键自动增加
     private Long id;
 
     @Column(nullable = false)
@@ -25,8 +25,7 @@ public class User implements Serializable {
 
     }
 
-    public User(Long id,String password,String name){
-        this.id =id;
+    public User(String password,String name){
         this.password = password;
         this.name = name;
     }

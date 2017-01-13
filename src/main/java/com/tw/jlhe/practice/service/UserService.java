@@ -10,7 +10,7 @@ public interface UserService {
 
     public void deleteUserById(Long id) throws Exception;
 
-    //public void updateUser(User user) throws Exception;
+    public void updateUser(User user) throws Exception;
 
 
     public User getUserById(Long id);

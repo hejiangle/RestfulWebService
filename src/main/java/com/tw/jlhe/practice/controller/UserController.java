@@ -76,12 +76,8 @@ public class UserController {
     @RequestMapping(value="/users/{id}" , method = RequestMethod.PUT)
     public ResponseEntity<?> updateUser(@PathVariable Long id,@RequestBody User user){
         try {
-            if(userService.getUserById(id)!=null){
-                userService.deleteUserById(id);
-                userService.createUser(user);
-            }else{
-                userService.createUser(user);
-            }
+            user.setId(id);
+            userService.updateUser(user);
             return ResponseEntity.ok(new MessageResult("Update user is successful!"));
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageResult(e.getMessage()),HttpStatus.BAD_REQUEST);
