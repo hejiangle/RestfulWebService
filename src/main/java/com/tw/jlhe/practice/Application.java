@@ -3,9 +3,7 @@ package com.tw.jlhe.practice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Created by cqu on 23/12/2016.
- */
+
 @SpringBootApplication
 public class Application {
 

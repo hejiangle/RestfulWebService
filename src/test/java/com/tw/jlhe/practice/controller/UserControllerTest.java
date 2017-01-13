@@ -5,7 +5,7 @@ import com.tw.jlhe.practice.Application;
 import com.tw.jlhe.practice.entity.User;
 
 
-import com.tw.jlhe.practice.service.DataService;
+import com.tw.jlhe.practice.service.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +38,7 @@ public class UserControllerTest {
 
     @Spy
     @Autowired
-    private DataService dataServiceMock;
+    private UserService userServiceMock;
 
     @InjectMocks
     @Autowired
